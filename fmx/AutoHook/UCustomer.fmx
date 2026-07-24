@@ -1,0 +1,162 @@
+object FormCustomer: TFormCustomer
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Customer Details'
+  ClientHeight = 368
+  ClientWidth = 464
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lblName: TLabel
+    Position.X = 24.0
+    Position.Y = 24.0
+    Size.Width = 108.0
+    Size.Height = 18.0
+    Size.PlatformDefault = False
+    Text = 'Full name:'
+  end
+  object edtName: TEdit
+    Position.X = 140.0
+    Position.Y = 20.0
+    Size.Width = 300.0
+    Size.Height = 24.0
+    Size.PlatformDefault = False
+    TabOrder = 0
+    TextPrompt = 'e.g. John Smith'
+  end
+  object lblEmail: TLabel
+    Position.X = 24.0
+    Position.Y = 56.0
+    Size.Width = 108.0
+    Size.Height = 18.0
+    Size.PlatformDefault = False
+    Text = 'Email address:'
+  end
+  object edtEmail: TEdit
+    Position.X = 140.0
+    Position.Y = 52.0
+    Size.Width = 300.0
+    Size.Height = 24.0
+    Size.PlatformDefault = False
+    TabOrder = 1
+    TextPrompt = 'name@company.com'
+    Hint = 'We will never share your email address'
+    ShowHint = True
+  end
+  object lblPhone: TLabel
+    Position.X = 24.0
+    Position.Y = 88.0
+    Size.Width = 108.0
+    Size.Height = 18.0
+    Size.PlatformDefault = False
+    Text = 'Phone number:'
+  end
+  object edtPhone: TEdit
+    Position.X = 140.0
+    Position.Y = 84.0
+    Size.Width = 300.0
+    Size.Height = 24.0
+    Size.PlatformDefault = False
+    TabOrder = 2
+    TextPrompt = 'Include the country code'
+  end
+  object lblCountry: TLabel
+    Position.X = 24.0
+    Position.Y = 120.0
+    Size.Width = 108.0
+    Size.Height = 18.0
+    Size.PlatformDefault = False
+    Text = 'Country:'
+  end
+  object cmbCountry: TComboBox
+    Position.X = 140.0
+    Position.Y = 116.0
+    Size.Width = 200.0
+    Size.Height = 24.0
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Items.Strings = (
+      'Belgium'
+      'France'
+      'Germany'
+      'Netherlands'
+      'United Kingdom'
+      'United States')
+    ItemIndex = 0
+  end
+  object grpContact: TGroupBox
+    Position.X = 24.0
+    Position.Y = 156.0
+    Size.Width = 416.0
+    Size.Height = 76.0
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Preferred contact method'
+    object rbEmail: TRadioButton
+      GroupName = 'contact'
+      IsChecked = True
+      Position.X = 16.0
+      Position.Y = 36.0
+      Size.Width = 110.0
+      Size.Height = 20.0
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'By email'
+    end
+    object rbPhone: TRadioButton
+      GroupName = 'contact'
+      Position.X = 150.0
+      Position.Y = 36.0
+      Size.Width = 110.0
+      Size.Height = 20.0
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'By phone'
+    end
+    object rbPost: TRadioButton
+      GroupName = 'contact'
+      Position.X = 284.0
+      Position.Y = 36.0
+      Size.Width = 110.0
+      Size.Height = 20.0
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'By post'
+    end
+  end
+  object chkNewsletter: TCheckBox
+    IsChecked = True
+    Position.X = 24.0
+    Position.Y = 252.0
+    Size.Width = 320.0
+    Size.Height = 20.0
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Subscribe to the monthly newsletter'
+  end
+  object btnOK: TButton
+    Default = True
+    ModalResult = 1
+    Position.X = 264.0
+    Position.Y = 320.0
+    Size.Width = 84.0
+    Size.Height = 30.0
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'OK'
+  end
+  object btnCancel: TButton
+    Cancel = True
+    ModalResult = 2
+    Position.X = 356.0
+    Position.Y = 320.0
+    Size.Width = 84.0
+    Size.Height = 30.0
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Cancel'
+  end
+end

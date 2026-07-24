@@ -1,0 +1,196 @@
+object FormLeaveRequests: TFormLeaveRequests
+  Left = 0
+  Top = 0
+  Caption = 'Leave Requests'
+  ClientHeight = 430
+  ClientWidth = 620
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object gbNewRequest: TGroupBox
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 588.000000000000000000
+    Size.Height = 164.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'New leave request'
+    TabOrder = 0
+    object lblEmployee: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 34.000000000000000000
+      Size.Width = 88.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Employee:'
+    end
+    object cmbEmployee: TComboBox
+      Position.X = 110.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblLeaveType: TLabel
+      Position.X = 310.000000000000000000
+      Position.Y = 34.000000000000000000
+      Size.Width = 84.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Leave type:'
+    end
+    object cmbLeaveType: TComboBox
+      Position.X = 400.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblFirstDay: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 70.000000000000000000
+      Size.Width = 88.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'First day:'
+    end
+    object dtFirstDay: TDateEdit
+      Date = 46225.000000000000000000
+      Position.X = 110.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblLastDay: TLabel
+      Position.X = 310.000000000000000000
+      Position.Y = 70.000000000000000000
+      Size.Width = 84.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Last day:'
+    end
+    object dtLastDay: TDateEdit
+      Date = 46225.000000000000000000
+      Position.X = 400.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object rbFullDay: TRadioButton
+      IsChecked = True
+      Position.X = 110.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Full day'
+    end
+    object rbHalfDay: TRadioButton
+      Position.X = 220.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Half day'
+    end
+    object lblReason: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 130.000000000000000000
+      Size.Width = 88.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Reason:'
+    end
+    object edtReason: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Position.X = 110.000000000000000000
+      Position.Y = 124.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object btnSubmit: TButton
+      Position.X = 450.000000000000000000
+      Position.Y = 124.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Submit request'
+      TextSettings.Trimming = None
+      OnClick = btnSubmitClick
+    end
+  end
+  object grdRequests: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 16.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 588.000000000000000000
+    Size.Height = 176.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 568.000000000000000000
+    Viewport.Height = 151.000000000000000000
+    object colReqEmp: TStringColumn
+      Header = 'Employee'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 130.000000000000000000
+    end
+    object colReqType: TStringColumn
+      Header = 'Type'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 110.000000000000000000
+    end
+    object colReqFrom: TStringColumn
+      Header = 'From'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 90.000000000000000000
+    end
+    object colReqTo: TStringColumn
+      Header = 'To'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 90.000000000000000000
+    end
+    object colReqStatus: TStringColumn
+      Header = 'Status'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 90.000000000000000000
+    end
+  end
+  object btnApprove: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 384.000000000000000000
+    Size.Width = 90.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Approve'
+    TextSettings.Trimming = None
+    OnClick = btnApproveClick
+  end
+  object btnReject: TButton
+    Position.X = 114.000000000000000000
+    Position.Y = 384.000000000000000000
+    Size.Width = 90.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Reject'
+    TextSettings.Trimming = None
+    OnClick = btnRejectClick
+  end
+  object btnClose: TButton
+    Position.X = 524.000000000000000000
+    Position.Y = 384.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Close'
+    TextSettings.Trimming = None
+    OnClick = btnCloseClick
+  end
+end

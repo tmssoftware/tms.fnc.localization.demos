@@ -1,0 +1,141 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Multi-Form Demo'
+  ClientHeight = 420
+  ClientWidth = 560
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lblTitle: TLabel
+    StyledSettings = [Family, Style, FontColor, Other]
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 512.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Multi-Form Application Demo'
+    TabOrder = 5
+  end
+  object lblSubtitle: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 512.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'This demo shows dynamically created child forms and localization' +
+      ' via TTMSFNCLocalizationForm. Open each form below to explore the' +
+      ' different controls.'
+    TabOrder = 6
+  end
+  object btnCustomer: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Customer Details...'
+    TextSettings.Trimming = None
+    OnClick = btnCustomerClick
+  end
+  object btnSettings: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 150.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Application Settings...'
+    TextSettings.Trimming = None
+    OnClick = btnSettingsClick
+  end
+  object btnFeedback: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 196.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Send Feedback...'
+    TextSettings.Trimming = None
+    OnClick = btnFeedbackClick
+  end
+  object btnAbout: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 242.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'About This Demo...'
+    TextSettings.Trimming = None
+    OnClick = btnAboutClick
+  end
+  object lblLog: TLabel
+    Position.X = 288.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 248.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Activity log:'
+    TabOrder = 7
+  end
+  object lstLog: TListBox
+    Position.X = 288.000000000000000000
+    Position.Y = 126.000000000000000000
+    Size.Width = 248.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 244.000000000000000000
+    Viewport.Height = 148.000000000000000000
+  end
+  object MainMenu1: TMainMenu
+    Left = 328
+    Top = 328
+    object mnuFile: TMenuItem
+      Text = 'File'
+      object mnuFileExit: TMenuItem
+        Locked = True
+        Text = 'Exit'
+        OnClick = mnuFileExitClick
+      end
+    end
+    object mnuForms: TMenuItem
+      Text = 'Forms'
+      object mnuFormsCustomer: TMenuItem
+        Locked = True
+        Text = 'Customer Details...'
+        OnClick = btnCustomerClick
+      end
+      object mnuFormsSettings: TMenuItem
+        Locked = True
+        Text = 'Application Settings...'
+        OnClick = btnSettingsClick
+      end
+      object mnuFormsFeedback: TMenuItem
+        Locked = True
+        Text = 'Send Feedback...'
+        OnClick = btnFeedbackClick
+      end
+    end
+    object mnuHelp: TMenuItem
+      Text = 'Help'
+      object mnuHelpAbout: TMenuItem
+        Locked = True
+        Text = 'About This Demo...'
+        OnClick = btnAboutClick
+      end
+    end
+  end
+end

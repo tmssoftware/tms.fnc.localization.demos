@@ -1,0 +1,189 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Simple translation demo'
+  ClientHeight = 574
+  ClientWidth = 516
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object gbSettings: TGroupBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 500.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Application settings'
+    TabOrder = 1
+    object lblName: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 26.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Display name'
+      TabOrder = 38
+    end
+    object edtName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 39
+      Position.X = 120.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 372.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Enter your display name'
+    end
+    object lblLang: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 57.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Language'
+      TabOrder = 40
+    end
+    object cbLanguage: TTMSFNCLocalizationComboBox
+      Anchors = [akLeft, akTop, akRight]
+      DropDownCount = 16
+      Position.X = 120.000000000000000000
+      Position.Y = 54.000000000000000000
+      Size.Width = 372.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 41
+    end
+    object chkUpdate: TCheckBox
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 8.000000000000000000
+      Position.Y = 86.000000000000000000
+      Size.Width = 484.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 42
+      Text = 'Update automatically'
+    end
+  end
+  object gbControls: TGroupBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 145.000000000000000000
+    Size.Width = 500.000000000000000000
+    Size.Height = 112.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Sample controls'
+    TabOrder = 2
+    object rbPhone: TRadioButton
+      Position.X = 17.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 216.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 38
+      Text = 'Phone call'
+    end
+    object btnApply: TButton
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 17.000000000000000000
+      Position.Y = 78.000000000000000000
+      Size.Width = 475.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 39
+      Text = 'Apply changes'
+      TextSettings.Trimming = None
+    end
+    object rbText: TRadioButton
+      Position.X = 17.000000000000000000
+      Position.Y = 51.000000000000000000
+      Size.Width = 216.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 40
+      Text = 'Text message'
+    end
+    object cbFreq: TComboBox
+      Anchors = [akLeft, akTop, akRight]
+      Items.Strings = (
+        'Hourly'
+        'Daily'
+        'Weekly'
+        'Monthly'
+        'Yearly')
+      ItemIndex = 2
+      Position.X = 241.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 251.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 41
+    end
+  end
+  object lblNotes: TLabel
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 500.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Instructions'
+    TabOrder = 3
+  end
+  object memNotes: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'This is a TMemo that won'#39't get translated per rules.'
+      ''
+      'To create the translation file: '
+      
+        '1. Drop a TTMSFNCLocalizationCollector on the form & set Translat' +
+        'ionFolder to ".".'
+      '2. Double-click the collector to open the editor.'
+      
+        '3. Edit the values or fill in your preferred AI credentials and ' +
+        'let it do the translation. You'#39'll need '
+      'to do this per langauge.'
+      '4. Close the editor if you are finished.'
+      ''
+      'Run the application:'
+      'Change language with the combobox.')
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 297.000000000000000000
+    Size.Width = 500.000000000000000000
+    Size.Height = 269.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 496.000000000000000000
+    Viewport.Height = 249.000000000000000000
+  end
+  object MainMenu1: TMainMenu
+    Left = 440
+    Top = 112
+    object MenuItem1: TMenuItem
+      Text = 'File'
+      object MenuItem3: TMenuItem
+        Locked = True
+        Text = 'Exit'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Text = 'Help'
+      object MenuItem4: TMenuItem
+        Locked = True
+        Text = 'About this application'
+      end
+    end
+  end
+  object TMSFNCLocalizationLocalizer1: TTMSFNCLocalizationLocalizer
+    TranslationFolder = '.'
+    TranslationFiles = <>
+    Left = 216
+    Top = 112
+  end
+end

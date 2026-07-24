@@ -1,0 +1,142 @@
+object FormSuppliers: TFormSuppliers
+  Left = 0
+  Top = 0
+  Caption = 'Suppliers'
+  ClientHeight = 400
+  ClientWidth = 560
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lstSuppliers: TListBox
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 180.000000000000000000
+    Size.Height = 320.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = lstSuppliersChange
+    Viewport.Width = 176.000000000000000000
+    Viewport.Height = 316.000000000000000000
+  end
+  object lblSupplierName: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Company name:'
+    TabOrder = 1
+  end
+  object edtSupplierName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 216.000000000000000000
+    Position.Y = 36.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblContact: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 76.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Contact person:'
+    TabOrder = 3
+  end
+  object edtContact: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 216.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblPhone: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Phone:'
+    TabOrder = 5
+  end
+  object edtPhone: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 216.000000000000000000
+    Position.Y = 156.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblEmail: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 196.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'E-mail:'
+    TabOrder = 7
+  end
+  object edtEmail: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 216.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblSupplierNotes: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Notes:'
+    TabOrder = 9
+  end
+  object memSupplierNotes: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 216.000000000000000000
+    Position.Y = 276.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Viewport.Width = 324.000000000000000000
+    Viewport.Height = 56.000000000000000000
+  end
+  object btnSaveSupplier: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = 'Save'
+    TextSettings.Trimming = None
+    OnClick = btnSaveSupplierClick
+  end
+  object btnClose: TButton
+    Position.X = 464.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Close'
+    TextSettings.Trimming = None
+    OnClick = btnCloseClick
+  end
+end

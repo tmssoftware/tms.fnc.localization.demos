@@ -1,0 +1,107 @@
+object FormStock: TFormStock
+  Left = 0
+  Top = 0
+  Caption = 'Stock Levels'
+  ClientHeight = 410
+  ClientWidth = 620
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lblWarehouse: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 84.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Warehouse:'
+    TabOrder = 0
+  end
+  object cmbWarehouse: TComboBox
+    Position.X = 106.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object edtItemSearch: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 272.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Search item...'
+  end
+  object chkBelowReorder: TCheckBox
+    Position.X = 448.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Below reorder level'
+  end
+  object grdStock: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 16.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 588.000000000000000000
+    Size.Height = 300.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 568.000000000000000000
+    Viewport.Height = 259.000000000000000000
+    object colStockItem: TStringColumn
+      Header = 'Item'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 180.000000000000000000
+    end
+    object colStockWarehouse: TStringColumn
+      Header = 'Warehouse'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 120.000000000000000000
+    end
+    object colOnHand: TStringColumn
+      Header = 'On hand'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 80.000000000000000000
+    end
+    object colReserved: TStringColumn
+      Header = 'Reserved'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 80.000000000000000000
+    end
+    object colReorderLevel: TStringColumn
+      Header = 'Reorder level'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 110.000000000000000000
+    end
+  end
+  object btnRefreshStock: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 368.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Refresh'
+    TextSettings.Trimming = None
+    OnClick = btnRefreshStockClick
+  end
+  object btnClose: TButton
+    Position.X = 524.000000000000000000
+    Position.Y = 368.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Close'
+    TextSettings.Trimming = None
+    OnClick = btnCloseClick
+  end
+end

@@ -1,0 +1,70 @@
+object FormAbout: TFormAbout
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'About'
+  ClientHeight = 260
+  ClientWidth = 400
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lblProduct: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 28.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Multi-Form Demo Application'
+    TabOrder = 1
+  end
+  object lblVersion: TLabel
+    Position.Y = 66.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Version 1.0.0'
+    TabOrder = 2
+  end
+  object lblDescription: TLabel
+    Position.X = 30.000000000000000000
+    Position.Y = 100.000000000000000000
+    Size.Width = 340.000000000000000000
+    Size.Height = 52.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 
+      'A sample application with dynamically created child forms, used ' +
+      'to demonstrate application localization.'
+    TabOrder = 3
+  end
+  object lblCopyright: TLabel
+    Hint = 'Copyright'
+    Position.Y = 164.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = #169' 2026 TMS software. All rights reserved.'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+  end
+  object btnClose: TButton
+    Cancel = True
+    Default = True
+    ModalResult = 2
+    Position.X = 158.000000000000000000
+    Position.Y = 204.000000000000000000
+    Size.Width = 84.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Close'
+    TextSettings.Trimming = None
+  end
+end

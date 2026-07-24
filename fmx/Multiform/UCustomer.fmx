@@ -1,0 +1,172 @@
+object FormCustomer: TFormCustomer
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Customer Details'
+  ClientHeight = 368
+  ClientWidth = 464
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lblName: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 108.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Full name:'
+    TabOrder = 8
+  end
+  object edtName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 140.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'e.g. John Smith'
+  end
+  object lblEmail: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 108.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Email address:'
+    TabOrder = 9
+  end
+  object edtEmail: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 140.000000000000000000
+    Position.Y = 52.000000000000000000
+    Hint = 'We will never share your email address'
+    Size.Width = 300.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'name@company.com'
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object lblPhone: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 108.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Phone number:'
+    TabOrder = 10
+  end
+  object edtPhone: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 140.000000000000000000
+    Position.Y = 84.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Include the country code'
+  end
+  object lblCountry: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 108.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Country:'
+    TabOrder = 11
+  end
+  object cmbCountry: TComboBox
+    Items.Strings = (
+      'Belgium'
+      'France'
+      'Germany'
+      'Netherlands'
+      'United Kingdom'
+      'United States')
+    ItemIndex = 0
+    Position.X = 140.000000000000000000
+    Position.Y = 116.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object grpContact: TGroupBox
+    Position.X = 24.000000000000000000
+    Position.Y = 156.000000000000000000
+    Size.Width = 416.000000000000000000
+    Size.Height = 76.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Preferred contact method'
+    TabOrder = 4
+    object rbEmail: TRadioButton
+      GroupName = 'contact'
+      IsChecked = True
+      Position.X = 16.000000000000000000
+      Position.Y = 36.000000000000000000
+      Size.Width = 110.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'By email'
+    end
+    object rbPhone: TRadioButton
+      GroupName = 'contact'
+      Position.X = 150.000000000000000000
+      Position.Y = 36.000000000000000000
+      Size.Width = 110.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'By phone'
+    end
+    object rbPost: TRadioButton
+      GroupName = 'contact'
+      Position.X = 284.000000000000000000
+      Position.Y = 36.000000000000000000
+      Size.Width = 110.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'By post'
+    end
+  end
+  object chkNewsletter: TCheckBox
+    IsChecked = True
+    Position.X = 24.000000000000000000
+    Position.Y = 252.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Subscribe to the monthly newsletter'
+  end
+  object btnOK: TButton
+    Default = True
+    ModalResult = 1
+    Position.X = 264.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 84.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'OK'
+    TextSettings.Trimming = None
+  end
+  object btnCancel: TButton
+    Cancel = True
+    ModalResult = 2
+    Position.X = 356.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 84.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Cancel'
+    TextSettings.Trimming = None
+  end
+end

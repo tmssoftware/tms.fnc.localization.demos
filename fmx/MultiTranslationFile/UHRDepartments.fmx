@@ -1,0 +1,150 @@
+object FormDepartments: TFormDepartments
+  Left = 0
+  Top = 0
+  Caption = 'Departments'
+  ClientHeight = 400
+  ClientWidth = 560
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lstDepartments: TListBox
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 180.000000000000000000
+    Size.Height = 320.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = lstDepartmentsChange
+    Viewport.Width = 176.000000000000000000
+    Viewport.Height = 316.000000000000000000
+  end
+  object lblDeptName: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Department name:'
+    TabOrder = 1
+  end
+  object edtDeptName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 216.000000000000000000
+    Position.Y = 36.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblManager: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 76.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Manager:'
+    TabOrder = 3
+  end
+  object edtManager: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 216.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblBudget: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Annual budget:'
+    TabOrder = 5
+  end
+  object spbBudget: TSpinBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Cursor = crIBeam
+    Max = 10000000.000000000000000000
+    Value = 150000.000000000000000000
+    Increment = 1000.000000000000000000
+    Position.X = 216.000000000000000000
+    Position.Y = 156.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblNotes: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 196.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Notes:'
+    TabOrder = 7
+  end
+  object memDeptNotes: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 216.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Viewport.Width = 324.000000000000000000
+    Viewport.Height = 116.000000000000000000
+  end
+  object btnAddDept: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Add'
+    TextSettings.Trimming = None
+    OnClick = btnAddDeptClick
+  end
+  object btnRemoveDept: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Remove'
+    TextSettings.Trimming = None
+    OnClick = btnRemoveDeptClick
+  end
+  object btnSaveDept: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = 'Save'
+    TextSettings.Trimming = None
+    OnClick = btnSaveDeptClick
+  end
+  object btnClose: TButton
+    Position.X = 464.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Close'
+    TextSettings.Trimming = None
+    OnClick = btnCloseClick
+  end
+end

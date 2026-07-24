@@ -1,0 +1,106 @@
+object FormEmployees: TFormEmployees
+  Left = 0
+  Top = 0
+  Caption = 'Employees'
+  ClientHeight = 400
+  ClientWidth = 620
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lblFilter: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Filter:'
+    TabOrder = 0
+  end
+  object edtFilter: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 70.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblDept: TLabel
+    Position.X = 250.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 86.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Department:'
+    TabOrder = 2
+  end
+  object cmbDeptFilter: TComboBox
+    Position.X = 340.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object grdEmployees: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 16.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 588.000000000000000000
+    Size.Height = 288.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 568.000000000000000000
+    Viewport.Height = 247.000000000000000000
+    object colEmpName: TStringColumn
+      Header = 'Name'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 140.000000000000000000
+    end
+    object colEmpDept: TStringColumn
+      Header = 'Department'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 110.000000000000000000
+    end
+    object colEmpPosition: TStringColumn
+      Header = 'Position'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 130.000000000000000000
+    end
+    object colEmpHire: TStringColumn
+      Header = 'Hire date'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 90.000000000000000000
+    end
+    object colEmpEmail: TStringColumn
+      Header = 'E-mail'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 170.000000000000000000
+    end
+  end
+  object btnNewEmployee: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 356.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'New employee'
+    TextSettings.Trimming = None
+    OnClick = btnNewEmployeeClick
+  end
+  object btnClose: TButton
+    Position.X = 524.000000000000000000
+    Position.Y = 356.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Close'
+    TextSettings.Trimming = None
+    OnClick = btnCloseClick
+  end
+end

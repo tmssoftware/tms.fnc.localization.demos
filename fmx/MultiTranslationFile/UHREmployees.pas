@@ -1,0 +1,82 @@
+unit UHREmployees;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  System.Rtti, FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.StdCtrls, FMX.Edit, FMX.ListBox, FMX.Layouts, FMX.Grid, FMX.Grid.Style,
+  FMX.ScrollBox, FMX.Controls.Presentation, TMS.TMSFNCLocalizationForm;
+
+type
+  TFormEmployees = class(TTMSFNCLocalizationForm)
+    lblFilter: TLabel;
+    edtFilter: TEdit;
+    lblDept: TLabel;
+    cmbDeptFilter: TComboBox;
+    grdEmployees: TStringGrid;
+    colEmpName: TStringColumn;
+    colEmpDept: TStringColumn;
+    colEmpPosition: TStringColumn;
+    colEmpHire: TStringColumn;
+    colEmpEmail: TStringColumn;
+    btnNewEmployee: TButton;
+    btnClose: TButton;
+    procedure FormCreate(Sender: TObject);
+    procedure btnNewEmployeeClick(Sender: TObject);
+    procedure btnCloseClick(Sender: TObject);
+  private
+    procedure AddEmployee(const AName, ADept, APosition, AHireDate, AEmail: string);
+  public
+  end;
+
+implementation
+
+uses
+  UDM;
+
+{$R *.fmx}
+
+procedure TFormEmployees.AddEmployee(const AName, ADept, APosition, AHireDate,
+  AEmail: string);
+var
+  LRow: Integer;
+begin
+  LRow := grdEmployees.RowCount;
+  grdEmployees.RowCount := LRow + 1;
+  grdEmployees.Cells[0, LRow] := AName;
+  grdEmployees.Cells[1, LRow] := ADept;
+  grdEmployees.Cells[2, LRow] := APosition;
+  grdEmployees.Cells[3, LRow] := AHireDate;
+  grdEmployees.Cells[4, LRow] := AEmail;
+end;
+
+procedure TFormEmployees.FormCreate(Sender: TObject);
+begin
+  cmbDeptFilter.Items.Add(DM.StringCatalog.GetByName('HR.AllDepartments'));
+  cmbDeptFilter.Items.Add(DM.StringCatalog.GetByName('HR.Sales'));
+  cmbDeptFilter.Items.Add(DM.StringCatalog.GetByName('HR.Engineering'));
+  cmbDeptFilter.Items.Add(DM.StringCatalog.GetByName('HR.Finance'));
+  cmbDeptFilter.Items.Add(DM.StringCatalog.GetByName('HR.Support'));
+  cmbDeptFilter.ItemIndex := 0;
+
+  grdEmployees.RowCount := 0;
+  AddEmployee('Anna Johnson', DM.StringCatalog.GetByName('HR.Sales'), DM.StringCatalog.GetByName('HR.AccountManager'), '2018-03-12', 'anna.johnson@example.com');
+  AddEmployee('Peter Novak', DM.StringCatalog.GetByName('HR.Engineering'), DM.StringCatalog.GetByName('HR.SoftwareDeveloper'), '2020-09-01', 'peter.novak@example.com');
+  AddEmployee('Maria Garcia', DM.StringCatalog.GetByName('HR.Finance'), DM.StringCatalog.GetByName('HR.Controller'), '2016-01-15', 'maria.garcia@example.com');
+  AddEmployee('John Smith', DM.StringCatalog.GetByName('HR.Support'), DM.StringCatalog.GetByName('HR.SupportEngineer'), '2021-06-07', 'john.smith@example.com');
+  AddEmployee('Sofie Peeters', DM.StringCatalog.GetByName('HR.Sales'), DM.StringCatalog.GetByName('HR.SalesRep'), '2019-11-23', 'sofie.peeters@example.com');
+  AddEmployee('Tomas Kovacs', DM.StringCatalog.GetByName('HR.Engineering'), DM.StringCatalog.GetByName('HR.QA'), '2022-02-28', 'tomas.kovacs@example.com');
+end;
+
+procedure TFormEmployees.btnNewEmployeeClick(Sender: TObject);
+begin
+  ShowMessage(DM.StringCatalog.GetByName('HR.AddEmployee'));
+end;
+
+procedure TFormEmployees.btnCloseClick(Sender: TObject);
+begin
+  Close;
+end;
+
+end.

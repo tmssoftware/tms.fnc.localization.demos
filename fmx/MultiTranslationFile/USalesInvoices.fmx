@@ -1,0 +1,141 @@
+object FormInvoices: TFormInvoices
+  Left = 0
+  Top = 0
+  Caption = 'Invoices'
+  ClientHeight = 420
+  ClientWidth = 620
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lstInvoices: TListBox
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 340.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = lstInvoicesChange
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 336.000000000000000000
+  end
+  object gbDetails: TGroupBox
+    Position.X = 232.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 372.000000000000000000
+    Size.Height = 260.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Invoice details'
+    TabOrder = 1
+    object lblInvNo: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 34.000000000000000000
+      Size.Width = 126.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Invoice number:'
+    end
+    object edtInvNo: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Position.X = 150.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblInvCustomer: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 70.000000000000000000
+      Size.Width = 126.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Customer:'
+    end
+    object edtInvCustomer: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Position.X = 150.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblInvAmount: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 106.000000000000000000
+      Size.Width = 126.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Amount:'
+    end
+    object edtInvAmount: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Position.X = 150.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblInvDue: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 142.000000000000000000
+      Size.Width = 126.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Due date:'
+    end
+    object dtInvDue: TDateEdit
+      Date = 46225.000000000000000000
+      Position.X = 150.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object chkPaid: TCheckBox
+      Position.X = 150.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Invoice is paid'
+    end
+  end
+  object btnPrint: TButton
+    Position.X = 232.000000000000000000
+    Position.Y = 300.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Print'
+    TextSettings.Trimming = None
+    OnClick = btnPrintClick
+  end
+  object btnEmail: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 300.000000000000000000
+    Size.Width = 130.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Send by e-mail'
+    TextSettings.Trimming = None
+    OnClick = btnEmailClick
+  end
+  object btnClose: TButton
+    Position.X = 524.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Close'
+    TextSettings.Trimming = None
+    OnClick = btnCloseClick
+  end
+end

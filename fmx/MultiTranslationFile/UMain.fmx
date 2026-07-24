@@ -1,0 +1,188 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Business Suite Demo'
+  ClientHeight = 316
+  ClientWidth = 560
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object gbSales: TGroupBox
+    Position.X = 16.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 168.000000000000000000
+    Size.Height = 184.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Sales'
+    TabOrder = 0
+    object btnCustomers: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Customers'
+      TextSettings.Trimming = None
+      OnClick = btnCustomersClick
+    end
+    object btnOrders: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 66.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Orders'
+      TextSettings.Trimming = None
+      OnClick = btnOrdersClick
+    end
+    object btnInvoices: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Invoices'
+      TextSettings.Trimming = None
+      OnClick = btnInvoicesClick
+    end
+    object btnProducts: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 142.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Products'
+      TextSettings.Trimming = None
+      OnClick = btnProductsClick
+    end
+  end
+  object gbHR: TGroupBox
+    Position.X = 196.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 168.000000000000000000
+    Size.Height = 184.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Human Resources'
+    TabOrder = 1
+    object btnEmployees: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Employees'
+      TextSettings.Trimming = None
+      OnClick = btnEmployeesClick
+    end
+    object btnDepartments: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 66.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Departments'
+      TextSettings.Trimming = None
+      OnClick = btnDepartmentsClick
+    end
+    object btnLeaveRequests: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Leave Requests'
+      TextSettings.Trimming = None
+      OnClick = btnLeaveRequestsClick
+    end
+    object btnPayroll: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 142.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Payroll'
+      TextSettings.Trimming = None
+      OnClick = btnPayrollClick
+    end
+  end
+  object gbInventory: TGroupBox
+    Position.X = 376.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 168.000000000000000000
+    Size.Height = 184.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Inventory'
+    TabOrder = 2
+    object btnStock: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Stock Levels'
+      TextSettings.Trimming = None
+      OnClick = btnStockClick
+    end
+    object btnSuppliers: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 66.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Suppliers'
+      TextSettings.Trimming = None
+      OnClick = btnSuppliersClick
+    end
+    object btnPurchaseOrders: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Purchase Orders'
+      TextSettings.Trimming = None
+      OnClick = btnPurchaseOrdersClick
+    end
+    object btnShipments: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 142.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Shipments'
+      TextSettings.Trimming = None
+      OnClick = btnShipmentsClick
+    end
+  end
+  object lblStatus: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 528.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'All forms in this application are created dynamically at runtime' +
+      '.'
+    TabOrder = 3
+  end
+  object TMSFNCLocalizationComboBox1: TTMSFNCLocalizationComboBox
+    DropDownCount = 16
+    Position.X = 24.000000000000000000
+    Position.Y = 279.000000000000000000
+    Size.Width = 144.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  object lbLanguage: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 254.000000000000000000
+    Size.Width = 528.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Language selector'
+    TabOrder = 7
+  end
+end

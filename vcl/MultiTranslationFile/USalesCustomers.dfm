@@ -1,0 +1,149 @@
+object FormCustomers: TFormCustomers
+  Left = 0
+  Top = 0
+  Margins.Left = 5
+  Margins.Top = 5
+  Margins.Right = 5
+  Margins.Bottom = 5
+  Caption = 'Customers'
+  ClientHeight = 630
+  ClientWidth = 939
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -18
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 144
+  TextHeight = 25
+  object lblSearch: TLabel
+    Left = 24
+    Top = 27
+    Width = 56
+    Height = 25
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    Caption = 'Search:'
+  end
+  object edtSearch: TEdit
+    Left = 120
+    Top = 18
+    Width = 270
+    Height = 33
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    TabOrder = 0
+  end
+  object btnSearch: TButton
+    Left = 408
+    Top = 18
+    Width = 120
+    Height = 39
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    Caption = 'Search'
+    TabOrder = 1
+    OnClick = btnSearchClick
+  end
+  object chkShowInactive: TCheckBox
+    Left = 552
+    Top = 24
+    Width = 330
+    Height = 30
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    Caption = 'Show inactive customers'
+    TabOrder = 2
+  end
+  object grdCustomers: TStringGrid
+    Left = 24
+    Top = 78
+    Width = 882
+    Height = 450
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    DefaultColWidth = 96
+    DefaultRowHeight = 33
+    FixedCols = 0
+    RowCount = 2
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+    TabOrder = 3
+  end
+  object pnlButtons: TPanel
+    Left = 0
+    Top = 558
+    Width = 939
+    Height = 72
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 4
+    object btnAdd: TButton
+      Left = 24
+      Top = 15
+      Width = 120
+      Height = 42
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Caption = 'Add'
+      TabOrder = 0
+      OnClick = btnAddClick
+    end
+    object btnEdit: TButton
+      Left = 156
+      Top = 15
+      Width = 120
+      Height = 42
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Caption = 'Edit'
+      TabOrder = 1
+      OnClick = btnEditClick
+    end
+    object btnDelete: TButton
+      Left = 288
+      Top = 15
+      Width = 120
+      Height = 42
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Caption = 'Delete'
+      TabOrder = 2
+      OnClick = btnDeleteClick
+    end
+    object btnClose: TButton
+      Left = 786
+      Top = 15
+      Width = 120
+      Height = 42
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Caption = 'Close'
+      TabOrder = 3
+      OnClick = btnCloseClick
+    end
+  end
+end

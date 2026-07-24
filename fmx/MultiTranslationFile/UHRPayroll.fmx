@@ -1,0 +1,148 @@
+object FormPayroll: TFormPayroll
+  Left = 0
+  Top = 0
+  Caption = 'Payroll'
+  ClientHeight = 430
+  ClientWidth = 620
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lblPeriod: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 56.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Period:'
+    TabOrder = 0
+  end
+  object cmbMonth: TComboBox
+    Position.X = 80.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 140.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object spbYear: TSpinBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Cursor = crIBeam
+    Min = 2020.000000000000000000
+    Max = 2035.000000000000000000
+    Value = 2026.000000000000000000
+    Position.X = 236.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnCalculate: TButton
+    Position.X = 352.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Calculate'
+    TextSettings.Trimming = None
+    OnClick = btnCalculateClick
+  end
+  object grdPayroll: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 16.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 588.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 568.000000000000000000
+    Viewport.Height = 215.000000000000000000
+    object colPayEmp: TStringColumn
+      Header = 'Employee'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 180.000000000000000000
+    end
+    object colPayGross: TStringColumn
+      Header = 'Gross salary'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 120.000000000000000000
+    end
+    object colPayTax: TStringColumn
+      Header = 'Tax'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 110.000000000000000000
+    end
+    object colPayNet: TStringColumn
+      Header = 'Net salary'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 120.000000000000000000
+    end
+  end
+  object gbSummary: TGroupBox
+    Position.X = 16.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 588.000000000000000000
+    Size.Height = 72.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Summary'
+    TabOrder = 5
+    object lblTotalGross: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 34.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Total gross:'
+    end
+    object lblTotalGrossValue: TLabel
+      Position.X = 110.000000000000000000
+      Position.Y = 34.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '0.00'
+    end
+    object lblTotalNet: TLabel
+      Position.X = 300.000000000000000000
+      Position.Y = 34.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Total net:'
+    end
+    object lblTotalNetValue: TLabel
+      Position.X = 390.000000000000000000
+      Position.Y = 34.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '0.00'
+    end
+  end
+  object btnExport: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 388.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Export to file'
+    TextSettings.Trimming = None
+    OnClick = btnExportClick
+  end
+  object btnClose: TButton
+    Position.X = 524.000000000000000000
+    Position.Y = 388.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Close'
+    TextSettings.Trimming = None
+    OnClick = btnCloseClick
+  end
+end

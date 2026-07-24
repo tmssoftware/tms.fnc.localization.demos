@@ -1,0 +1,139 @@
+object FormPurchaseOrders: TFormPurchaseOrders
+  Left = 0
+  Top = 0
+  Caption = 'Purchase Orders'
+  ClientHeight = 410
+  ClientWidth = 620
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lblSupplier: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 72.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Supplier:'
+    TabOrder = 0
+  end
+  object cmbSupplier: TComboBox
+    Position.X = 92.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 180.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object lblExpected: TLabel
+    Position.X = 292.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 132.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Expected delivery:'
+    TabOrder = 2
+  end
+  object dtExpected: TDateEdit
+    Date = 46225.000000000000000000
+    Position.X = 428.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object grdLines: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 16.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 588.000000000000000000
+    Size.Height = 250.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 568.000000000000000000
+    Viewport.Height = 225.000000000000000000
+    object colLineItem: TStringColumn
+      Header = 'Item'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 220.000000000000000000
+    end
+    object colLineQty: TStringColumn
+      Header = 'Quantity'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 80.000000000000000000
+    end
+    object colLinePrice: TStringColumn
+      Header = 'Unit price'
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object colLineTotal: TStringColumn
+      Header = 'Line total'
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+  end
+  object btnAddLine: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 318.000000000000000000
+    Size.Width = 90.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Add line'
+    TextSettings.Trimming = None
+    OnClick = btnAddLineClick
+  end
+  object btnRemoveLine: TButton
+    Position.X = 114.000000000000000000
+    Position.Y = 318.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Remove line'
+    TextSettings.Trimming = None
+    OnClick = btnRemoveLineClick
+  end
+  object lblOrderTotal: TLabel
+    Position.X = 360.000000000000000000
+    Position.Y = 324.000000000000000000
+    Size.Width = 90.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Order total:'
+    TabOrder = 7
+  end
+  object lblOrderTotalValue: TLabel
+    Position.X = 454.000000000000000000
+    Position.Y = 324.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '0.00'
+    TabOrder = 8
+  end
+  object btnSubmitPO: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 366.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Submit order'
+    TextSettings.Trimming = None
+    OnClick = btnSubmitPOClick
+  end
+  object btnClose: TButton
+    Position.X = 524.000000000000000000
+    Position.Y = 366.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Close'
+    TextSettings.Trimming = None
+    OnClick = btnCloseClick
+  end
+end

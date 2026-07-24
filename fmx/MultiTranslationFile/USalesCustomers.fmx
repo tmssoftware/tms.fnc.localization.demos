@@ -1,0 +1,134 @@
+object FormCustomers: TFormCustomers
+  Left = 0
+  Top = 0
+  Caption = 'Customers'
+  ClientHeight = 420
+  ClientWidth = 620
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lblSearch: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 60.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Search:'
+    TabOrder = 0
+  end
+  object edtSearch: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 80.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 180.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnSearch: TButton
+    Position.X = 272.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Search'
+    TextSettings.Trimming = None
+    OnClick = btnSearchClick
+  end
+  object chkShowInactive: TCheckBox
+    Position.X = 368.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Show inactive customers'
+  end
+  object grdCustomers: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 16.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 588.000000000000000000
+    Size.Height = 300.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 568.000000000000000000
+    Viewport.Height = 259.000000000000000000
+    object colName: TStringColumn
+      Header = 'Name'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 160.000000000000000000
+    end
+    object colCity: TStringColumn
+      Header = 'City'
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object colCountry: TStringColumn
+      Header = 'Country'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 110.000000000000000000
+    end
+    object colPhone: TStringColumn
+      Header = 'Phone'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 120.000000000000000000
+    end
+    object colStatus: TStringColumn
+      Header = 'Status'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 80.000000000000000000
+    end
+  end
+  object pnlButtons: TPanel
+    Align = Bottom
+    Position.Y = 372.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object btnAdd: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Add'
+      TextSettings.Trimming = None
+      OnClick = btnAddClick
+    end
+    object btnEdit: TButton
+      Position.X = 104.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Edit'
+      TextSettings.Trimming = None
+      OnClick = btnEditClick
+    end
+    object btnDelete: TButton
+      Position.X = 192.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Delete'
+      TextSettings.Trimming = None
+      OnClick = btnDeleteClick
+    end
+    object btnClose: TButton
+      Position.X = 524.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Close'
+      TextSettings.Trimming = None
+      OnClick = btnCloseClick
+    end
+  end
+end

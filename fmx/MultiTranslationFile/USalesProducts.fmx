@@ -1,0 +1,240 @@
+object FormProducts: TFormProducts
+  Left = 0
+  Top = 0
+  Caption = 'Product Editor'
+  ClientHeight = 400
+  ClientWidth = 560
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object tbcProduct: TTabControl
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 528.000000000000000000
+    Size.Height = 320.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = Top
+    Sizes = (
+      528s
+      294s
+      528s
+      294s
+      528s
+      294s)
+    object tabGeneral: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Trimming = None
+      IsSelected = True
+      Size.Width = 61.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'General'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      object lblName: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 26.000000000000000000
+        Size.Width = 116.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Product name:'
+        TabOrder = 0
+      end
+      object edtName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 140.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblSKU: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 62.000000000000000000
+        Size.Width = 116.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'SKU:'
+        TabOrder = 2
+      end
+      object edtSKU: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Position.X = 140.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 140.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblPrice: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 98.000000000000000000
+        Size.Width = 116.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Unit price:'
+        TabOrder = 4
+      end
+      object spbPrice: TSpinBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 50.000000000000000000
+        Position.X = 140.000000000000000000
+        Position.Y = 92.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblCategory: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 134.000000000000000000
+        Size.Width = 116.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Category:'
+        TabOrder = 6
+      end
+      object cmbCategory: TComboBox
+        Position.X = 140.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 180.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+      end
+      object chkActive: TCheckBox
+        IsChecked = True
+        Position.X = 140.000000000000000000
+        Position.Y = 168.000000000000000000
+        Size.Width = 200.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = 'Product is active'
+      end
+    end
+    object tabDescription: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Trimming = None
+      IsSelected = False
+      Size.Width = 81.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Description'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      object memDescription: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 496.000000000000000000
+        Size.Height = 240.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 492.000000000000000000
+        Viewport.Height = 236.000000000000000000
+      end
+    end
+    object tabOptions: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Trimming = None
+      IsSelected = False
+      Size.Width = 62.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Options'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      object chkTaxable: TCheckBox
+        IsChecked = True
+        Position.X = 16.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Subject to VAT'
+      end
+      object chkTrackStock: TCheckBox
+        IsChecked = True
+        Position.X = 16.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Track stock levels'
+      end
+      object chkDiscount: TCheckBox
+        Position.X = 16.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Allow discounts'
+      end
+      object rbPhysical: TRadioButton
+        IsChecked = True
+        Position.X = 16.000000000000000000
+        Position.Y = 136.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Physical product'
+      end
+      object rbDigital: TRadioButton
+        Position.X = 16.000000000000000000
+        Position.Y = 168.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Digital product'
+      end
+    end
+  end
+  object btnSave: TButton
+    Position.X = 368.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Save'
+    TextSettings.Trimming = None
+    OnClick = btnSaveClick
+  end
+  object btnCancel: TButton
+    Position.X = 456.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 88.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Cancel'
+    TextSettings.Trimming = None
+    OnClick = btnCancelClick
+  end
+end
