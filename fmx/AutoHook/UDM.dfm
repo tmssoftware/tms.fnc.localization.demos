@@ -22,7 +22,6 @@ object DM: TDM
   object Localizer: TTMSFNCLocalizationLocalizer
     TranslationStartMode = tsmAutoHook
     TranslationFolder = '.'
-    TranslationFiles = <>
     Left = 280
     Top = 80
   end

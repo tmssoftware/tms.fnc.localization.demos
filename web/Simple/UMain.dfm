@@ -30,7 +30,7 @@ object Form1: TForm1
     object WebLabel2: TWebLabel
       Left = 24
       Top = 36
-      Width = 170
+      Width = 107
       Height = 25
       Margins.Left = 5
       Margins.Top = 5
@@ -43,7 +43,7 @@ object Form1: TForm1
     object WebLabel3: TWebLabel
       Left = 24
       Top = 79
-      Width = 170
+      Width = 77
       Height = 25
       Margins.Left = 5
       Margins.Top = 5
@@ -232,7 +232,6 @@ object Form1: TForm1
   end
   object TMSFNCLocalizationLocalizer1: TTMSFNCLocalizationLocalizer
     TranslationFolder = '.'
-    TranslationFiles = <>
     Left = 324
     Top = 216
   end

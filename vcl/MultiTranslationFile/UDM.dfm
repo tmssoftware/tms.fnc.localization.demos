@@ -3,13 +3,39 @@ object DM: TDM
   Width = 629
   PixelsPerInch = 144
   object Collector: TTMSFNCLocalizationCollector
-    TranslationFiles = <>
+    TranslationFiles = <
+      item
+        Name = 'hr'
+        FileName = 'translations.hr.json'
+        Roots.Strings = (
+          'Forms.FormDepartments'
+          'Forms.FormEmployees'
+          'Forms.FormPayroll'
+          'Forms.FormLeaveRequests')
+      end
+      item
+        Name = 'invoice'
+        FileName = 'translations.invoice.json'
+        Roots.Strings = (
+          'Forms.FormPurchaseOrders'
+          'Forms.FormShipments'
+          'Forms.FormStock'
+          'Forms.FormSuppliers')
+      end
+      item
+        Name = 'sales'
+        FileName = 'translations.sales.json'
+        Roots.Strings = (
+          'Forms.FormCustomers'
+          'Forms.FormInvoices'
+          'Forms.FormOrders'
+          'Forms.FormProducts')
+      end>
     Left = 200
     Top = 192
   end
   object Localizer: TTMSFNCLocalizationLocalizer
     TranslationFolder = '.'
-    TranslationFiles = <>
     Left = 296
     Top = 56
   end

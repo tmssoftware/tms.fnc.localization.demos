@@ -36,7 +36,6 @@ object DM: TDM
   end
   object Localizer: TTMSFNCLocalizationLocalizer
     TranslationFolder = '.'
-    TranslationFiles = <>
     Left = 296
     Top = 56
   end

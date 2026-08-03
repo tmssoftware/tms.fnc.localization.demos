@@ -95,7 +95,6 @@ object Form4: TForm4
       Size.PlatformDefault = False
       TabOrder = 39
       Text = 'Apply changes'
-      TextSettings.Trimming = None
     end
     object rbText: TRadioButton
       Position.X = 17.000000000000000000
@@ -141,8 +140,8 @@ object Form4: TForm4
       ''
       'To create the translation file: '
       
-        '1. Drop a TTMSFNCLocalizationCollector on the form & set Translat' +
-        'ionFolder to ".".'
+        '1. Drop a TTMSFNCLocalizationCollector on the form & set Transla' +
+        'tionFolder to ".".'
       '2. Double-click the collector to open the editor.'
       
         '3. Edit the values or fill in your preferred AI credentials and ' +
@@ -182,7 +181,6 @@ object Form4: TForm4
   end
   object TMSFNCLocalizationLocalizer1: TTMSFNCLocalizationLocalizer
     TranslationFolder = '.'
-    TranslationFiles = <>
     Left = 216
     Top = 112
   end

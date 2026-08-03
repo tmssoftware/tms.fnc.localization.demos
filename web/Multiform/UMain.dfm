@@ -29,12 +29,12 @@ object FormMain: TFormMain
   object lblSubtitle: TWebLabel
     Left = 36
     Top = 90
-    Width = 765
+    Width = 662
     Height = 50
     Caption = 
       'This demo shows dynamically created child forms and localization' +
-      ' via TTMSFNCLocalizationForm. Open each form below to explore the' +
-      ' different controls.'
+      ' via TTMSFNCLocalizationForm. Open each form below to explore th' +
+      'e different controls.'
     HeightPercent = 100.000000000000000000
     WordWrap = True
     WidthPercent = 100.000000000000000000
@@ -100,7 +100,6 @@ object FormMain: TFormMain
   end
   object Localizer: TTMSFNCLocalizationLocalizer
     TranslationFolder = '.'
-    TranslationFiles = <>
     Left = 420
     Top = 456
   end
