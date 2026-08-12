@@ -99,7 +99,7 @@ object FormMain: TFormMain
     ItemIndex = -1
   end
   object Localizer: TTMSFNCLocalizationLocalizer
-    TranslationFolder = '.'
+    LocalizationFolder = '.'
     Left = 420
     Top = 456
   end

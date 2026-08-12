@@ -3,7 +3,7 @@ object DM: TDM
   Width = 629
   PixelsPerInch = 144
   object TMSFNCLocalizationCollector1: TTMSFNCLocalizationCollector
-    TranslationFiles = <
+    LocalizationFiles = <
       item
         Name = 'hr'
         FileName = 'translations.hr.json'
@@ -35,7 +35,7 @@ object DM: TDM
     Top = 224
   end
   object Localizer: TTMSFNCLocalizationLocalizer
-    TranslationFolder = '.'
+    LocalizationFolder = '.'
     Left = 296
     Top = 56
   end

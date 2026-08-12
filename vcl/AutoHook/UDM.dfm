@@ -20,8 +20,8 @@ object DM: TDM
     Top = 120
   end
   object Localizer: TTMSFNCLocalizationLocalizer
-    TranslationStartMode = tsmAutoHook
-    TranslationFolder = '.'
+    LocalizationStartMode = lsmAutoHook
+    LocalizationFolder = '.'
     Left = 404
     Top = 128
   end

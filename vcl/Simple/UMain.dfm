@@ -1,7 +1,7 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Simple translation demo'
+  Caption = 'Simple localization demo'
   ClientHeight = 553
   ClientWidth = 516
   Color = clBtnFace
@@ -148,7 +148,7 @@ object Form2: TForm2
     Lines.Strings = (
       'This is a TMemo that won'#39't get translated per rules.'
       ''
-      'To create the translation file: '
+      'To create the localization file: '
       
         '1. Drop a TTMSFNCLocalizationCollector on the form & set Transla' +
         'tionFolder to ".".'
@@ -183,7 +183,7 @@ object Form2: TForm2
     end
   end
   object TMSFNCLocalizationLocalizer1: TTMSFNCLocalizationLocalizer
-    TranslationFolder = '.'
+    LocalizationFolder = '.'
     Left = 239
     Top = 168
   end

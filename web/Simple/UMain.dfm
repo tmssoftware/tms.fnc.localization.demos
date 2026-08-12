@@ -187,12 +187,12 @@ object Form1: TForm1
     Lines.Strings = (
       'This is a TMemo that won'#39't get translated per rules.'
       ''
-      'To create the translation file: '
+      'To create the localization file: '
       '1. Drop a TTMSFNCLocalizationCollector on the form.'
       '2. Double-click the collector to open the editor.'
       
         '3. Edit the values or fill in your preferred AI credentials and ' +
-        'let it do the translation. You'#39'll need '
+        'let it do the localization. You'#39'll need '
       'to do this per langauge.'
       '4. Close the editor if you are finished.'
       '5. Build the application.'
@@ -231,7 +231,7 @@ object Form1: TForm1
     end
   end
   object TMSFNCLocalizationLocalizer1: TTMSFNCLocalizationLocalizer
-    TranslationFolder = '.'
+    LocalizationFolder = '.'
     Left = 324
     Top = 216
   end

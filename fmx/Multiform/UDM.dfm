@@ -20,7 +20,7 @@ object DM: TDM
     Top = 80
   end
   object Localizer: TTMSFNCLocalizationLocalizer
-    TranslationFolder = '.'
+    LocalizationFolder = '.'
     Left = 280
     Top = 80
   end
