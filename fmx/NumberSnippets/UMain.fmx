@@ -1,0 +1,100 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Multi-Form Demo (FMX)'
+  ClientHeight = 420
+  ClientWidth = 560
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lblTitle: TLabel
+    StyledSettings = [Family, Style, FontColor, Other]
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 512.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Number snippet demo'
+    TabOrder = 0
+  end
+  object lblSubtitle: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 512.000000000000000000
+    Size.Height = 69.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.VertAlign = Leading
+    Text = 
+      'This demo shows the usage of number snippets. Number snippets le' +
+      't you retrieve the correct plural form of a localized string bas' +
+      'ed on a number. For example, they can automatically choose betwe' +
+      'en '#8220'1 file'#8221' and '#8220'2 files'#8221' according to the language'#8217's pluralizat' +
+      'ion rules.'
+    TabOrder = 1
+  end
+  object sbCount: TSpinBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Cursor = crIBeam
+    Value = 1.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 201.000000000000000000
+    OnChange = sbCountChange
+  end
+  object lblItemCount: TLabel
+    Position.X = 132.000000000000000000
+    Position.Y = 201.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'lblItemCount'
+    TabOrder = 3
+  end
+  object btnEditor: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 129.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Open localization editor'
+    OnClick = btnEditorClick
+  end
+  object lblInstruction: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 512.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Change the number below:'
+    TabOrder = 6
+  end
+  object LocalizationEditor: TTMSFNCLocalizationEditor
+    Size.Width = 26.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    Position.X = 232.000000000000000000
+    Position.Y = 264.000000000000000000
+  end
+  object TMSFNCLocalizationComboBox1: TTMSFNCLocalizationComboBox
+    Position.X = 364.000000000000000000
+    Position.Y = 129.000000000000000000
+    Size.Width = 172.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+  end
+  object lblLanguage: TLabel
+    Position.X = 288.000000000000000000
+    Position.Y = 129.000000000000000000
+    Size.Width = 68.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Language'
+    TabOrder = 10
+  end
+end
