@@ -50,7 +50,6 @@ end;
 
 procedure TFormMain.FormCreate(Sender: TObject);
 begin
-  LocalizationEditor.Collector := Collector;
   UpdateItemCount;
 end;
 

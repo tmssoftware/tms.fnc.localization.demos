@@ -50,7 +50,6 @@ end;
 procedure TFormMain.FormCreate(Sender: TObject);
 begin
   DM.Collector.AutoSaveOnDestroy := True;
-  LocalizationEditor.Collector := DM.Collector;
   // Needs a single initial call; automatic mode does not trigger for the main form.
   DM.Localizer.PerformLocalization;
   UpdateItemCount;
