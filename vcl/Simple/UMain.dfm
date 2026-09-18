@@ -1,130 +1,177 @@
 object Form2: TForm2
   Left = 0
   Top = 0
+  Margins.Left = 5
+  Margins.Top = 5
+  Margins.Right = 5
+  Margins.Bottom = 5
   Caption = 'Simple localization demo'
-  ClientHeight = 553
-  ClientWidth = 516
+  ClientHeight = 830
+  ClientWidth = 774
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -12
+  Font.Height = -18
   Font.Name = 'Segoe UI'
   Font.Style = []
   Menu = MainMenu1
   OnCreate = FormCreate
+  PixelsPerInch = 144
   DesignSize = (
-    516
-    553)
-  TextHeight = 15
+    774
+    830)
+  TextHeight = 25
   object lblNotes: TLabel
-    Left = 8
-    Top = 280
-    Width = 62
-    Height = 15
+    Left = 12
+    Top = 420
+    Width = 92
+    Height = 25
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
     Anchors = [akLeft, akTop, akRight]
     Caption = 'Instructions'
   end
   object gbSettings: TGroupBox
-    Left = 8
-    Top = 8
-    Width = 500
-    Height = 121
+    Left = 12
+    Top = 12
+    Width = 750
+    Height = 182
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
     Anchors = [akLeft, akTop, akRight]
     Caption = 'Application settings'
     TabOrder = 0
-    ExplicitWidth = 494
     DesignSize = (
-      500
-      121)
+      750
+      182)
     object lblName: TLabel
-      Left = 8
-      Top = 26
-      Width = 71
-      Height = 15
+      Left = 12
+      Top = 39
+      Width = 107
+      Height = 25
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
       Caption = 'Display name'
     end
     object lblLang: TLabel
-      Left = 8
-      Top = 57
-      Width = 52
-      Height = 15
+      Left = 12
+      Top = 86
+      Width = 77
+      Height = 25
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
       Caption = 'Language'
     end
     object edtName: TEdit
-      Left = 120
-      Top = 24
-      Width = 372
-      Height = 23
+      Left = 180
+      Top = 36
+      Width = 558
+      Height = 33
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 0
       TextHint = 'Enter your display name'
-      ExplicitWidth = 366
     end
     object cbLanguage: TTMSFNCLocalizationComboBox
-      Left = 120
-      Top = 54
-      Width = 372
-      Height = 23
+      Left = 180
+      Top = 81
+      Width = 558
+      Height = 33
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
       Style = csDropDownList
       Anchors = [akLeft, akTop, akRight]
       DropDownCount = 16
       TabOrder = 1
-      ExplicitWidth = 366
     end
     object chkUpdate: TCheckBox
-      Left = 8
-      Top = 86
-      Width = 484
-      Height = 19
+      Left = 12
+      Top = 129
+      Width = 726
+      Height = 29
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
       Anchors = [akLeft, akTop, akRight]
       Caption = 'Update automatically'
       TabOrder = 2
-      ExplicitWidth = 478
     end
   end
   object gbControls: TGroupBox
-    Left = 8
-    Top = 145
-    Width = 500
-    Height = 112
+    Left = 12
+    Top = 218
+    Width = 750
+    Height = 168
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
     Anchors = [akLeft, akTop, akRight]
     Caption = 'Sample controls'
     TabOrder = 1
-    ExplicitWidth = 494
     DesignSize = (
-      500
-      112)
+      750
+      168)
     object rbPhone: TRadioButton
-      Left = 17
-      Top = 24
-      Width = 216
-      Height = 19
+      Left = 26
+      Top = 36
+      Width = 324
+      Height = 29
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
       Caption = 'Phone call'
       TabOrder = 0
     end
     object rbText: TRadioButton
-      Left = 17
-      Top = 51
-      Width = 216
-      Height = 19
+      Left = 26
+      Top = 77
+      Width = 324
+      Height = 28
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
       Caption = 'Text message'
       TabOrder = 1
     end
     object btnApply: TButton
-      Left = 17
-      Top = 78
-      Width = 475
-      Height = 23
+      Left = 26
+      Top = 117
+      Width = 712
+      Height = 35
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
       Anchors = [akLeft, akTop, akRight]
       Caption = 'Apply changes'
       TabOrder = 3
-      ExplicitWidth = 469
     end
     object cbFreq: TComboBox
-      Left = 241
-      Top = 24
-      Width = 251
-      Height = 23
+      Left = 362
+      Top = 36
+      Width = 376
+      Height = 33
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
       Style = csDropDownList
       Anchors = [akLeft, akTop, akRight]
       ItemIndex = 2
@@ -136,14 +183,17 @@ object Form2: TForm2
         'Weekly'
         'Monthly'
         'Yearly')
-      ExplicitWidth = 245
     end
   end
   object memNotes: TMemo
-    Left = 8
-    Top = 297
-    Width = 500
-    Height = 248
+    Left = 12
+    Top = 446
+    Width = 750
+    Height = 372
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
     Anchors = [akLeft, akTop, akRight, akBottom]
     Lines.Strings = (
       'This is a TMemo that won'#39't get translated per rules.'
@@ -163,8 +213,6 @@ object Form2: TForm2
       'Run the application:'
       'Change language with the combobox.')
     TabOrder = 2
-    ExplicitWidth = 494
-    ExplicitHeight = 231
   end
   object MainMenu1: TMainMenu
     Left = 360
@@ -183,6 +231,7 @@ object Form2: TForm2
     end
   end
   object TMSFNCLocalizationLocalizer1: TTMSFNCLocalizationLocalizer
+    AcceptedStatuses = [lstApproved]
     LocalizationFolder = '.'
     Left = 239
     Top = 168

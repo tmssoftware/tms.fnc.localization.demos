@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Menus,
-  TMS.TMSFNCLocalizationLocalizer, TMS.TMSFNCLocalizationCollector, TMS.TMSFNCLocalizationForm;
+  TMS.TMSFNCLocalizationLocalizer, TMS.TMSFNCLocalizationCollector, VCL.TMSFNCLocalizationForm,
+  VCL.TMSFNCLocalizationPlatformCore;
 
 type
   TFormMain = class(TTMSFNCLocalizationForm)

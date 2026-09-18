@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   System.Rtti, FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.StdCtrls, FMX.Edit, FMX.ListBox, FMX.Layouts, FMX.Grid, FMX.Grid.Style,
-  FMX.ScrollBox, FMX.Controls.Presentation, TMS.TMSFNCLocalizationForm;
+  FMX.ScrollBox, FMX.Controls.Presentation, FMX.TMSFNCLocalizationForm;
 
 type
   TFormShipments = class(TTMSFNCLocalizationForm)

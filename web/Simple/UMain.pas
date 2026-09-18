@@ -7,7 +7,8 @@ uses
   WEBLib.Forms, WEBLib.Dialogs, Vcl.Menus, WEBLib.Menus, Vcl.Controls,
   WEBLib.ExtCtrls, Vcl.StdCtrls, WEBLib.StdCtrls, WEBLib.TMSFNCLocalizationComboBox,
   TMS.TMSFNCLocalizationCollector, VCL.TMSFNCLocalizationComboBox,
-  TMS.TMSFNCLocalizationLocalizer;
+  TMS.TMSFNCLocalizationLocalizer,
+  WEBLib.TMSFNCLocalizationPlatformCore;
 
 type
   TForm1 = class(TWebForm)

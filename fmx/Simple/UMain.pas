@@ -6,9 +6,8 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Memo.Types,
   FMX.ScrollBox, FMX.Memo, FMX.StdCtrls, FMX.ListBox,
-  TMS.TMSFNCLocalizationComboBox, FMX.Edit, FMX.Controls.Presentation, FMX.Menus,
-  TMS.TMSFNCLocalizationCollector, TMS.TMSFNCLocalizationLocalizer,
-  FMX.TMSFNCLocalizationComboBox;
+  FMX.TMSFNCLocalizationComboBox, FMX.Edit, FMX.Controls.Presentation, FMX.Menus,
+  TMS.TMSFNCLocalizationCollector, TMS.TMSFNCLocalizationLocalizer, FMX.TMSFNCLocalizationPlatformCore;
 
 type
   TForm4 = class(TForm)

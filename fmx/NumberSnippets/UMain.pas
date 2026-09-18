@@ -6,9 +6,10 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.ListBox, FMX.Menus, FMX.Layouts, FMX.Controls.Presentation,
-  TMS.TMSFNCLocalizationLocalizer, TMS.TMSFNCLocalizationCollector, TMS.TMSFNCLocalizationForm,
+  TMS.TMSFNCLocalizationLocalizer, TMS.TMSFNCLocalizationCollector, FMX.TMSFNCLocalizationForm,
   FMX.Edit, FMX.EditBox, FMX.SpinBox, FMX.TMSFNCCustomComponent,
-  FMX.TMSFNCLocalizationEditor, FMX.TMSFNCLocalizationComboBox;
+  FMX.TMSFNCLocalizationEditor, FMX.TMSFNCLocalizationComboBox,
+  FMX.TMSFNCLocalizationPlatformCore;
 
 type
   TFormMain = class(TTMSFNCLocalizationForm)

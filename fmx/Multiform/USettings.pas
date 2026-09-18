@@ -6,8 +6,8 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.TabControl, FMX.ListBox, FMX.Controls.Presentation,
-  FMX.TMSFNCLocalizationComboBox, TMS.TMSFNCLocalizationCollector,
-  TMS.TMSFNCLocalizationForm;
+  FMX.TMSFNCLocalizationComboBox, FMX.TMSFNCLocalizationPlatformCore,
+  TMS.TMSFNCLocalizationCollector, FMX.TMSFNCLocalizationForm;
 
 type
   TFormSettings = class(TTMSFNCLocalizationForm)

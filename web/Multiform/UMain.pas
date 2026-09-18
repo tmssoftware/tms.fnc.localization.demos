@@ -5,8 +5,9 @@ interface
 uses
   System.SysUtils, System.Classes, JS, Web, WEBLib.Graphics, WEBLib.Controls,
   WEBLib.Forms, WEBLib.Dialogs, Vcl.Controls, Vcl.StdCtrls, WEBLib.StdCtrls,
-  Vcl.Menus, WEBLib.Menus, TMS.TMSFNCLocalizationForm,
-  TMS.TMSFNCLocalizationLocalizer, TMS.TMSFNCLocalizationStringCatalog;
+  Vcl.Menus, WEBLib.Menus, WEBLib.TMSFNCLocalizationForm,
+  TMS.TMSFNCLocalizationLocalizer, TMS.TMSFNCLocalizationStringCatalog,
+  WEBLib.TMSFNCLocalizationPlatformCore;
 
 type
   TFormMain = class(TTMSFNCLocalizationForm)

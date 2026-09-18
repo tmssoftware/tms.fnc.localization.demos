@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Edit, FMX.EditBox, FMX.SpinBox, FMX.ListBox, FMX.Layouts, FMX.TabControl,
   FMX.Memo.Types, FMX.ScrollBox, FMX.Memo, FMX.Controls.Presentation, 
-  TMS.TMSFNCLocalizationForm;
+  FMX.TMSFNCLocalizationForm;
 
 type
   TFormProducts = class(TTMSFNCLocalizationForm)

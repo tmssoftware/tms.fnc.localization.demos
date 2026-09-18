@@ -6,9 +6,10 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
   Vcl.StdCtrls, Vcl.Samples.Spin, TMS.TMSFNCLocalizationLocalizer,
-  TMS.TMSFNCLocalizationCollector, TMS.TMSFNCLocalizationForm,
+  TMS.TMSFNCLocalizationCollector, VCL.TMSFNCLocalizationForm,
   VCL.TMSFNCLocalizationEditor, VCL.TMSFNCLocalizationComboBox,
-  VCL.TMSFNCCustomComponent;
+  VCL.TMSFNCCustomComponent,
+  VCL.TMSFNCLocalizationPlatformCore;
 
 type
   TFormMain = class(TTMSFNCLocalizationForm)

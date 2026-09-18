@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Controls.Presentation, TMS.TMSFNCLocalizationForm;
+  FMX.Controls.Presentation, FMX.TMSFNCLocalizationForm;
 
 type
   TFormAbout = class(TTMSFNCLocalizationForm)

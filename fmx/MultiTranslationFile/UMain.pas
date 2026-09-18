@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Controls.Presentation, FMX.ListBox, FMX.TMSFNCLocalizationComboBox,
-  TMS.TMSFNCLocalizationForm;
+  FMX.TMSFNCLocalizationForm;
 
 type
   TSubFormClass = class of TTMSFNCLocalizationForm;

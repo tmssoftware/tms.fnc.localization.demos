@@ -7,7 +7,7 @@ uses
   System.Rtti, FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.StdCtrls, FMX.Edit, FMX.ListBox, FMX.Layouts, FMX.DateTimeCtrls,
   FMX.Grid, FMX.Grid.Style, FMX.ScrollBox, FMX.Controls.Presentation,
-  TMS.TMSFNCLocalizationForm;
+  FMX.TMSFNCLocalizationForm;
 
 type
   TFormLeaveRequests = class(TTMSFNCLocalizationForm)

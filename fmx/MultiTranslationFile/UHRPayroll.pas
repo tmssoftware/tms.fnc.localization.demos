@@ -7,7 +7,7 @@ uses
   System.Rtti, System.DateUtils, FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.StdCtrls, FMX.Edit, FMX.EditBox, FMX.SpinBox, FMX.ListBox, FMX.Layouts,
   FMX.Grid, FMX.Grid.Style, FMX.ScrollBox, FMX.Controls.Presentation,
-  TMS.TMSFNCLocalizationForm;
+  FMX.TMSFNCLocalizationForm;
 
 type
   TFormPayroll = class(TTMSFNCLocalizationForm)

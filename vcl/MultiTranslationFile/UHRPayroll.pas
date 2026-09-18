@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
   System.DateUtils, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
-  Vcl.Grids, Vcl.Samples.Spin, TMS.TMSFNCLocalizationForm;
+  Vcl.Grids, Vcl.Samples.Spin, VCL.TMSFNCLocalizationForm;
 
 type
   TFormPayroll = class(TTMSFNCLocalizationForm)

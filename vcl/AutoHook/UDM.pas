@@ -5,7 +5,8 @@ interface
 uses
   System.SysUtils, System.Classes, TMS.TMSFNCLocalizationSnippets,
   TMS.TMSFNCLocalizationCollector, TMS.TMSFNCLocalizationStringCatalog,
-  TMS.TMSFNCLocalizationLocalizer;
+  TMS.TMSFNCLocalizationLocalizer,
+  VCL.TMSFNCLocalizationPlatformCore;
 
 type
   TDM = class(TDataModule)

@@ -95,6 +95,7 @@ object Form4: TForm4
       Size.PlatformDefault = False
       TabOrder = 39
       Text = 'Apply changes'
+      TextSettings.Trimming = None
     end
     object rbText: TRadioButton
       Position.X = 17.000000000000000000
@@ -180,6 +181,7 @@ object Form4: TForm4
     end
   end
   object TMSFNCLocalizationLocalizer1: TTMSFNCLocalizationLocalizer
+    AcceptedStatuses = [lstApproved]
     LocalizationFolder = '.'
     Left = 216
     Top = 112

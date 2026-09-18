@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Classes, JS, Web, WEBLib.Graphics, WEBLib.Controls,
   WEBLib.Forms, Vcl.Controls, Vcl.StdCtrls, WEBLib.StdCtrls, WEBLib.ExtCtrls,
-  TMS.TMSFNCLocalizationForm;
+  WEBLib.TMSFNCLocalizationForm;
 
 type
   TFormCustomer = class(TTMSFNCLocalizationForm)

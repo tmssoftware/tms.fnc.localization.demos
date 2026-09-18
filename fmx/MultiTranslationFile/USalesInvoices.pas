@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Edit, FMX.ListBox, FMX.Layouts, FMX.DateTimeCtrls,
-  FMX.Controls.Presentation, TMS.TMSFNCLocalizationForm;
+  FMX.Controls.Presentation, FMX.TMSFNCLocalizationForm;
 
 type
   TFormInvoices = class(TTMSFNCLocalizationForm)

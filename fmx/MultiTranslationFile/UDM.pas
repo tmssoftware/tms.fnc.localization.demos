@@ -4,7 +4,8 @@ interface
 
 uses
   System.SysUtils, System.Classes, TMS.TMSFNCLocalizationCollector,
-  TMS.TMSFNCLocalizationStringCatalog, TMS.TMSFNCLocalizationLocalizer;
+  TMS.TMSFNCLocalizationStringCatalog, TMS.TMSFNCLocalizationLocalizer,
+  FMX.TMSFNCLocalizationPlatformCore;
 
 type
   TDM = class(TDataModule)
